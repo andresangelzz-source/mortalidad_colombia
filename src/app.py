@@ -90,6 +90,18 @@ fig_edad.update_layout(
     yaxis_title="Numero de Muertes",
     bargap=0.2
 )
+muertes_mes = (
+    df_mortalidad.groupby("MES")
+    .size()
+    .reset_index(name="TOTAL")
+)
+
+fig_lineas = px.line(
+    muertes_mes,
+    x="MES",
+    y="TOTAL",
+    title="Muertes por mes"
+)
 
 # =========================
 # APP DASH
@@ -163,7 +175,8 @@ app.layout = html.Div([
      
     dcc.Graph(figure=fig_sexo), 
     dcc.Graph(figure=fig_dep), 
-    dcc.Graph(figure=fig_edad)
+    dcc.Graph(figure=fig_edad),
+    dcc.Graph(figure=fig_lineas)
 ],     style={
         "background": "#F5F5F5",
         "padding": "20px"
