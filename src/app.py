@@ -19,7 +19,7 @@ df_codigos = pd.read_csv(
 )
 
 df_divipola = pd.read_csv(
-    os.path.join("src", "data", "Divipola_CE_(1).csv"),
+    os.path.join("src", "data", "Divipola.csv"),
     sep=";"
 )
 
