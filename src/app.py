@@ -10,18 +10,21 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 df_mortalidad = pd.read_csv(
     os.path.join("src", "data", "Nuevo_anexo.csv"),
-    sep=";"
-)
+    sep=";",
+    low_memory=False
+).head(5000)
 
 df_codigos = pd.read_csv(
     os.path.join("src", "data", "Nuevo_anexo1.csv"),
-    sep=";"
-)
+    sep=";",
+    low_memory=False
+).head(5000)
 
 df_divipola = pd.read_csv(
     os.path.join("src", "data", "Divipola.csv"),
-    sep=";"
-)
+    sep=";",
+    low_memory=False
+).head(5000)
 
 # =========================
 # MOSTRAR INFORMACIÓN
