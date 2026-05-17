@@ -8,16 +8,27 @@ BASE_DIR = os.path.dirname(__file__)
 # CARGAR ARCHIVOS EXCEL
 # =========================
 
-df_mortalidad = pd.read_excel(os.path.join(BASE_DIR, "data", "Nuevo_anexo.xlsx"), engine="openpyxl")
-df_codigos = pd.read_excel(os.path.join(BASE_DIR, "data", "Nuevo_anexo1.xlsx"), engine="openpyxl")
-df_divipola = pd.read_excel(os.path.join(BASE_DIR, "data", "Divipola_CE_ (1).xlsx"), engine="openpyxl")
+df_mortalidad = pd.read_excel(
+    os.path.join(BASE_DIR, "data", "Nuevo_anexo.xlsx"),
+    engine="openpyxl"
+)
+
+df_codigos = pd.read_excel(
+    os.path.join(BASE_DIR, "data", "Nuevo_anexo1.xlsx"),
+    engine="openpyxl"
+)
+
+df_divipola = pd.read_excel(
+    os.path.join(BASE_DIR, "data", "Divipola_CE__ (1).xlsx"),
+    engine="openpyxl"
+)
 
 # =========================
 # MOSTRAR INFORMACIÓN
 # =========================
 
 
-print(df_mortalidad.columns)
+#print(df_mortalidad.columns)
 #print(df_mortalidad.head())
 
 
