@@ -9,15 +9,18 @@ BASE_DIR = os.path.dirname(__file__)
 # =========================
 
 df_mortalidad = pd.read_csv(
-    os.path.join(BASE_DIR, "data", "Nuevo_anexo.csv")
+    os.path.join(BASE_DIR, "data", "Nuevo_anexo.csv"),
+    sep=";"
 )
 
 df_codigos = pd.read_csv(
-    os.path.join(BASE_DIR, "data", "Nuevo_anexo1.csv")
+    os.path.join(BASE_DIR, "data", "Nuevo_anexo1.csv"),
+    sep=";"
 )
 
 df_divipola = pd.read_csv(
-    os.path.join(BASE_DIR, "data", "Divipola_CE.csv")
+    os.path.join(BASE_DIR, "data", "Divipola_CE.csv"),
+    sep=";"
 )
 
 
