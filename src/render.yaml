@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: mortalidad-colombia
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn src.app:server
