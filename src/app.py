@@ -3,7 +3,7 @@ import os
 from dash import Dash, html, dcc, Input, Output
 import plotly.express as px
 
-BASE_DIR = os.path.dirname(__file__)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # =========================
 # CARGAR ARCHIVOS EXCEL
 # =========================
